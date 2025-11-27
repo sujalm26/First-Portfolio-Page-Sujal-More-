@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+  body 
+  {
+    margin: 0;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    color: #efe5e5;
+    background: url("download (5).jpg") no-repeat center center fixed;
+    background-size: cover;
+    scroll-behavior: smooth;
+  }
+
+  body::before 
+  {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 33, 70, 0.786); 
+    z-index: -1;
+  }
+
+
+  nav 
+  {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(15, 13, 13, 0.937);
+    padding: 15px;
+    z-index: 10;
+  }
+
+  nav a 
+  {
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  nav a:hover 
+  {
+    color: #0eaad5;
+    transform: scale(1.1);
+  }
+
+  header 
+  {
+    text-align: center;
+    padding: 60px 20px 30px;
+  }
+
+  header h1 
+  {
+    font-size: 3rem;
+    margin: 10px 0;
+    color: #fcf9f9fb;
+  }
+
+  header p 
+  {
+    max-width: 700px;
+    font-size: 1.2rem;
+    margin: 8px auto;
+    color: #cdcdd7;
+  }
+
+  .photo 
+  {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0c81a1f0;
+    box-shadow: 0 5px 20px rgba(0, 190, 243, 0.711);
+  }
+
+ 
+  section 
+  {
+    background: rgba(0, 0, 0, 0.532);
+    border-radius: 15px;
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 900px;
+    box-shadow: 0 8px 25px rgba(29, 18, 18, 0.899);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(198, 180, 180, 0.25);
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00ffb7;
+    margin-bottom: 15px;
+  }
+
+  p, li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  ul li {
+    margin: 8px 0;
+    font-weight: 500;
+  }
+
+
+  footer {
+    text-align: center;
+    background: rgba(15, 13, 13, 0.79);
+    color: #ece5e5;
+    padding: 25px 10px;
+    font-size: 1rem;
+    margin-top: 40px;
+  }
+
+  footer a {
+    color: #00c6ff;
+    text-decoration: none;
+  }
+
+
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+    header p, section p, li {
+      font-size: 1rem;
+    }
+    .photo {
+      width: 140px;
+      height: 140px;
+    }
+  }
+</style>
+
+
+
+<body>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home">
+    <center>
+      <img class="photo" src="MyPicSM01.jpg" height="450"  alt="photo(Sujal More)" />
+      <h1>Sujal More</h1>
+      <p class="about me 01">
+        B.Tech-Artificial Intelligence & Data Science (Undergraduate) at Ajeenkya DY Patil University 
+      </p>
+      <p class="about me 02">
+        A passionate learner curious about tech and small projects. Learning to become an AI & DS engineer — always building and exploring.
+      </p>
+    </center>
+  </header>
+
+  <section class="section A" id="about">
+    <center>
+      <h2>About Me</h2>
+      <p>
+       I’m Sujal More, a passionate learner and explorer in the world of technology, currently pursuing B.Tech in Artificial Intelligence & Data Science. I enjoy turning curiosity into creativity — building small, meaningful projects that help me learn every day.
+
+I have a solid foundation in Python, C++, HTML, and CSS, and I’m diving deeper into AI and Machine Learning to understand how intelligent systems work. My goal is to become an AI & Data Science Engineer capable of developing innovative and impactful solutions.
+
+Every day is a step forward — learning, experimenting, and growing in the exciting field of AI and tech! 🚀
+      </p>
+    </center>
+  </section>
+
+  <section class="Seaction A2" id="skills">
+    <div class="A2">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>AI & Data Science (basics)</li>
+      </ul>
+    </div>
+
+    <center>
+    <div class="section B">
+      <h2>Strengths</h2>
+      <p class="some information">· Quick learner · Problem solver · Curious ·  </p>
+    </div>
+    </center>
+
+
+  </section>
+
+  <section class="section A" id="hobbies">
+    <h2>Hobbies & Interests</h2>
+    <ul class="hobbies">
+      <li>Playing Chess</li>
+      <li>Listening to Music</li>
+      <li>Cycling</li>
+      <li>Trekking</li>
+      <li>Meditation</li>
+      <li>Spending Alone Time for Reflection</li>
+    </ul>
+  </section>
+
+  <section class="section A" id="education">
+    <h2>Education</h2>
+    <p class="some information">
+      <strong>B.Tech in Artificial Intelligence & Data Science</strong><br />
+      Current undergraduate student — focusing on core AI and data skills, programming, and practical projects.
+    </p>
+  </section>
+
+  <section class="section A" id="contact">
+    <h2>Contact</h2>
+    <p class="some information">Email: <a href="mailto:sujalsatishmore2006@email.com">sujalsatishmore2006@email.com</a></p>
+    <p class="some information">  GitHub: <a href="https://github.com/sujalm26" target="_blank">github.com/sujalm26</a></p>
+    
+   <p class="some information">
+      LinkedIn: <a href="https://www.linkedin.com/in/sujal-more-a6735837a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">linkedin.com/in/sujal-more</a>
+    </p>
+    <p class="some information">Location: (Pune,Maharshtra,India)</p>
+  </section>
+
+  <footer>
+    <center>
+      Thanks for visiting my portfolio — always learning, growing, and open to connect! <br />
+      Sujal More | First Portfolio as a Project | Built with HTML & CSS
+    </center>
+  </footer>
+</body>
+</html>
